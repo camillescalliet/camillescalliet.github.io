@@ -1,0 +1,157 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR" content="Mozilla/4.5 [en] (X11; U; SunOS 5.6 sun4u) [Netscape]">
+  <title>Research | Camille Scalliet</title>
+  <link rel="icon" type ="image/x-icon" href="icon.ico">
+
+  <style>
+  a {
+    text-decoration: none;
+  }
+  * {
+    font-family:'Lato';
+  }
+  a {
+    color: #A36A41;
+  }
+  .fitp { /* set relative picture size */
+    max-width: 100%;
+    max-height: 150;
+  }
+  .fitm { /* set relative picture size */
+    max-width: 100%;
+    max-height: 200;
+  }
+  .fitg { /* set relative picture size */
+    max-width: 100%;
+    max-height: 250;
+  }
+  .center {
+    display: block;
+    margin: auto;
+  }
+  </style>
+
+</head>
+
+<!-- ________ ONGLETS EN HAUT ____________ -->
+<center>
+  <font size=+1><b>
+    <a href="http://www.damtp.cam.ac.uk/user/cs2057/">Home</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="research.html">Research</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="papers.html">Publications</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="conf.html">Talks</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CV.pdf">CV</a></b>
+  </font>
+</center>
+
+<ul>
+  <p><b><font color="#0065AD"><font size=+3>Research topics</font></font></b>
+    <br><br>
+
+    I am a theoretical physicist interested in various problems in soft and condensed matter physics, as well as non-equilibrium statistical physics, with a focus on disordered systems.
+    <br><br>
+
+    <!-- ________ Marginal stability ____________ -->
+
+    <b><font color="#0065AD"><font size=+1>Free energy landscapes in amorphous solids</font></font></b>
+    <br>Collaborators: <a href="https://coulomb.umontpellier.fr/perso/ludovic.berthier/">L. Berthier</a> (Univ. Montpellier) and <a href="http://www.phys.ens.fr/~zamponi/">F. Zamponi</a> (ENS, Paris).
+    <br><br>
+    I investigated the <b>structure of the free energy landscape in amorphous solids</b>, ranging from atomic and molecular glasses to colloidal and granular assemblies. This is of importance because the structure controls all physical properties: vibrational, transport, elastic, rheological and low-temperature. This problem is theoretically challenging as it combines out-of-equilibrium conditions with disorder. In this context, I developed and combined <b>smart algorithms for particle-based computer simulations</b> with theoretical methods based on <b>advanced statistical mechanics for disordered systems</b> including replica calculations and liquid state theory.
+
+    <br><br>I computed the free energy of a soft-particle model describing atomic, molecular, colloidal glasses, and granular packings in the limit of large spatial dimensions <a href="papers/PhysRevE.99.012107.pdf">[4]</a> (first image, below). I revealed a surprisingly rich phase diagram: depending on preparation (referring to molecular, colloidal or granular regimes), the solid at low temperature is either found in a simple structure of energy minima, or in a <i>marginally stable Gardner</i> phase characterized by a hierarchical organization of minima. My  results predicted the existence of a hierarchical landscapes in molecular, colloidal glasses and granular assemblies.
+
+    <br><br>I performed particle-based computer simulations in three dimensions to assess the validity of my predictions beyond mean field. In models of atomic glasses, ergodicity is broken at low temperature due to energy barriers corresponding to localized defects, and a Gardner phase is not observed <a href="papers/PhysRevLett.119.205501.pdf">[3]</a>. In conditions relevant to colloidal and granular systems, I found a marginally stable phase characterized by hierarchical landscapes (second) and delocalized excitations (third image) <a href="papers/s41467-019-13010-x.pdf">[9]</a>. In this regime, temperature cycles give rise to rejuvenation and memory effects <a href="papers/PhysRevLett.122.255502.pdf">[6]</a>, as for spin glasses in which hierarchical landscapes were first discovered. Depending on temperature, the same glass behaves as an old (little aging) or a young glass (strong aging). Hence the choice of Da Vinci's drawing (fourth image) for PRL's Editor Suggestion.
+
+    <br><br>To read more: <a href="papers/PhysRevLett.119.205501.pdf">Phys. Rev. Lett. (2017)</a>, <a href="papers/PhysRevE.99.012107.pdf">Phys. Rev. E (2019)</a>, <a href="papers/PhysRevLett.122.255502.pdf">Phys. Rev. Lett. (2019)</a>, <a href="papers/s41467-019-13010-x.pdf">Nature Comm. (2019)</a>.
+
+    <br><br><br>
+    <img class="center fitp" src='gardner.png'>
+    <br>
+
+
+    <!-- ________ TLS ____________ -->
+
+    <b><font color="#0065AD"><font size=+1>Two-level systems</font></font></b>
+    <br>
+    Collaborators: D. Khomenko and <a href ="http://www.columbia.edu/cu/chemistry/groups/reichman/people/dave.html">D. R. Reichman</a> (Columbia Univ.), S. Ciarella, F. Mocanu, <a href="http://www.phys.ens.fr/~zamponi/">F. Zamponi</a> (ENS Paris), and <a href="https://coulomb.umontpellier.fr/perso/ludovic.berthier/">L. Berthier</a> (Univ. Montpellier).
+    <br><br>
+
+    At very low temperature, the specific heat of glasses scales linearly with temperature instead of the cubic law observed in crystalline solids caused by phonons. In the 70s, the existence of two-level systems (TLS) was postulated to explain this excess contribution to the specific heat. These TLS would come from rare, nearly degenerate, adjacent local minima which could support quantum tunnelling with energy splitting of the order of 1K.
+    <br><br>
+    The localized defects I found in models of atomic glasses <a href="papers/PhysRevLett.119.205501.pdf">[3]</a> looked like good candidates for TLS. I took advantage of the swap Monte Carlo algorithm to generate in silico glasses with widely different stabilities, from ultrastable to hyperquenched. Using a <b>state-of-the-art reaction path-finding protocol</b> to locate double-well potentials in the multidimensional potential energy landscape, we performed the <b>first direct numerical sampling of two-level systems </b><a href="papers/PhysRevLett.124.225901.pdf">[9]</a>. We revealed that their nature can vary from collective to highly localized (left, credit Khomenko). We demonstrated that the density of TLS decreases with increasing glass stability, in line with recent measurements on ultrastable vapor-deposited amorphous films. We confirmed these results by measuring the TLS density in a realistic model for metallic glasses </b><a href="https://arxiv.org/abs/2209.09579">[16]</a>. In parallel, we are developing machine-learning techniques to accelerate the sampling of TLS in realistic glass forming models (right, credit Ciarella).
+
+    <br><br>To read more: <a href="papers/PhysRevLett.124.225901.pdf">Phys. Rev. Lett. (2020)</a>, <a href="papers/tlsjcp.pdf">J. Chem. Phys. 158, 014501 (2023)</a>, and <a href="https://arxiv.org/abs/2212.05582">arXiv:2212.05582</a>. See also Chandra Varma's <a href="https://www.condmatjclub.org/?p=4719">commentary</a> in the Journal Club for Condensed Matter Physics.
+
+    <br><br>
+    <img class="center fitg" src='tls.png'>
+    <br>
+
+
+    <!-- ________ SWAP ____________ -->
+
+    <b><font color="#0065AD"><font size=+1>Open access, efficient algorithms for particle-based computer simulations</font></font></b>
+    <br>Collaborators: E. Flenner (Colorado State Univ.), <a href="https://coulomb.umontpellier.fr/perso/ludovic.berthier/">L. Berthier</a> , C. J. Fullerton, M. Singh (Univ. Montpellier), K. Nguyen (Physics, Cambridge)
+    <br><br>
+    Standard numerical techniques, such as Molecular dynamics (MD) and Monte Carlo (MC), for simple glass-forming models fail to reach experimentally relevant timescales. In experiments, liquids fall out of equilibrium when the timescale for molecular motion has increased by 12 orders of magnitude, reaching around 100s. Months-long GPU or multi-CPU simulations reach 10ms at most. The introduction of Monte Carlo particle-swap (image) combined with the recent development of new computer models (ternary mixtures for metallic glasses, continously polydisperse for colloids) accelerates dramatically the thermalization of liquids, up to 10<font size=-1><sup>40</sup></font> times faster in two dimensions. We have implemented this algorithm in the open access LAMMPS package, for a variety of interaction potentials <a href="papers/Berthier_2019_J._Stat._Mech._2019_064004.pdf">[5]</a>. I can provide help with its use upon reasonable request.
+
+    <br><br>Together with K. Nguyen (Part III student, Cambridge), we are investigating the relaxation mechanism with particle-swap dynamics in order to understand its giant speedup, and with the long-term goal of developing the next generation of algorithms.
+
+    <br><br>To read more: <a href="papers/Berthier_2019_J._Stat._Mech._2019_064004.pdf">J. Stat. Mech. (2019)</a>.
+
+    <br><br>
+    <img class="center fitp" src='swap.jpg'>
+    <br><br>
+
+
+    <!-- ________ WINGS ____________ -->
+
+    <b><font color="#0065AD"><font size=+1>Equilibrium dynamics of supercooled liquids</font></font></b>
+    <br>
+    Collaborators: B. Guiselin and <a href="https://coulomb.umontpellier.fr/perso/ludovic.berthier/">L. Berthier</a>  (Univ. Montpellier).
+    <br><br>
+    Using state-of-the-art computational techniques combined with simple statistical models for heterogeneous and slow dynamics, we proposed a <a href="papers/wingexplained.pdf">revolutionary picture</a> for the viscous flow of liquids close to the glass transition. We employ the particle-swap algorithm to generate equilibrium configurations at temperatures down to the experimental glass transition. We follow the equilibrium physical dynamics of these unprecedentedly deep supercooled liquids by use of multi-CPU months-long simulations <a href="papers/s41567-022-01508-z">[12]</a>. At low enough temperature, the separation between fast and slow particles reaches more than 10 decades in time. In this unexplored temperature regime, close to the glass transition, we directly see the crucial role played by dynamic facilitation to relax the liquid (left image, cover). The color code indicates the microscopic relaxation time, from red to yellow, green and blue. Dynamic facilitation is evidenced by the fact that neighboring regions follow the color code. Mobility thus propagates slowly to nearby regions over time. Building a trap model with dynamic facilitation (right), we rationalize the assymetric shape of relaxation spectra observed in experiments <a href="papers/jcptrap.pdf">[11]</a>.
+
+    <br><br>To read more: <a href="papers/jcptrap.pdf">J. Chem. Phys. (2021)</a>, <a href="papers/s41567-022-01508-z">Nature Physics (2022)</a> and its <a href="papers/wingexplained.pdf">News & Views</a> by R. Zorn, and <a href="papers/prx.pdf">Phys. Rev. X 12, 041028 (2022)</a>.
+
+    <br><br>
+    <img class="center fitg" src='supercooled.png' >
+    <br><br>
+
+
+    <!-- ________ CRNs ____________ -->
+
+    <b><font color="#0065AD"><font size=+1>Emergent behavior in chemical reaction networks</font></font></b>
+    <br>
+    Collaborator: <a href ="https://www.ryerson.ca/physics/our-people/eric-de-giuli/">E. de Giuli</a> (Toronto Metropolitan Univ.)
+    <br><br>
+    Both natural ecosystems and biochemical reaction networks involve populations of
+    heterogeneous agents whose cooperative and competitive interactions lead to a rich dynamics of
+    species’ abundances, albeit at vastly different scales. The maintenance of diversity in large ecosystems is a longstanding puzzle, towards which recent progress has been made by the derivation of dynamical mean-field theories of random models. The theory predicts the relevance of marginal stability in ecosystems, with profound consequence on their stability and dynamics. If and how these phenomena have parallels in biochemical reaction networks is currently unknown. Making this connection is of interest since life requires cooperation among a large number of molecular species, and the origin of life is hotly debated. We find a reaction network whose large-scale behavior recovers the random Lotka-Volterra model recently considered in theoretical ecology. We use tools from statistical field theory and statistical physics for disordered systems such as the <b>Doi-Peliti formalism</b> and <b>dynamical mean-field theory</b> for random reaction networks. We clarify the assumptions necessary to derive the large-scale description of generalized Lotka-Volterra model, and reveal the underlying assumptions made on the noise to recover previous mean-field theories. 
+
+    <br><br>To read more: <a href="https://iopscience.iop.org/article/10.1088/1751-8121/aca3df">J. Phys. A: Math. Theor. (2022).</a>
+
+    <br><br>
+    <img class="center fitm" src='connecting.jpeg' >
+    <br><br>
+
+
+    <!-- ________ Disorder in graphene ____________ -->
+
+    <b><font color="#0065AD"><font size=+1>Influence of defects on the rippling dynamics of graphene</font></font></b>
+    <br>
+    Collaborators: F. Thiemann and E. A. M&uuml;ller (Univ. College London), <a href="https://www.ch.cam.ac.uk/group/michaelides/person/am452">A. Michaelides</a> (Chemistry, Cambridge)
+    <br><br>
+    With graphene’s behaviour being governed by the presence of imperfections in the crystal lattice, defects can be regarded as elementary building blocks to the material properties. A very recent study showed that defects (divacancies) affect the static structure of graphene, giving rise to strongly wrinkled surfaces. Here we investigate the impact of defects on the rippling dynamics of graphene sheets. We employ <b>large-scale machine learning-driven molecular dynamics simulations</b>. We find that increasing the defect density induces a transition from freely propagating ripples to frozen and static buckling (below, credit Thiemann). We find a critical defect concentration of 0.1%, which explains the non-monotonic behavior of Young’s modulus observed experimentally.
+
+    <br><br>Article in preparation.
+
+    <br><br>
+    <img class="center fitm" src='graphene.jpg' >
+  </p>
+
+
+  </html>
